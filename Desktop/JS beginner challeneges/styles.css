@@ -1,0 +1,15 @@
+* {
+
+}
+
+#myHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
