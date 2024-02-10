@@ -99,3 +99,10 @@
 // return num % 2 === 0 ? 1 : -1;
 // }
 // console.log(booleanInteger(5))
+
+//  || Q13.) CHECK IF A USER IS LOGGED IN AND SUBSCRIBED ||
+function isLoggedInAndSubscribed(loggedin, subscribed) {
+ return loggedin !== 'LOGGED_IN' && subscribed !== 'SUBSCRIBED'
+ 
+}
+console.log(isLoggedInAndSubscribed('LOGGED_IN','SUBSCRIBED'))
