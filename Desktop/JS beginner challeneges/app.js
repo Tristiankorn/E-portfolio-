@@ -100,9 +100,19 @@
 // }
 // console.log(booleanInteger(5))
 
+
 //  || Q13.) CHECK IF A USER IS LOGGED IN AND SUBSCRIBED ||
+
+// function isLoggedInAndSubscribed(loggedin, subscribed) {
+//  return loggedin !== 'LOGGED_IN' && subscribed !== 'SUBSCRIBED'
+ 
+// }
+// console.log(isLoggedInAndSubscribed('LOGGED_IN','SUBSCRIBED'))
+
+// || Q14.) Check if a user us logged in OR subsribed
 function isLoggedInAndSubscribed(loggedin, subscribed) {
- return loggedin !== 'LOGGED_IN' && subscribed !== 'SUBSCRIBED'
+return (loggedin === 'LOGGED_IN' || subsribed === 'SUBSRCIBED')
  
 }
-console.log(isLoggedInAndSubscribed('LOGGED_IN','SUBSCRIBED'))
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
