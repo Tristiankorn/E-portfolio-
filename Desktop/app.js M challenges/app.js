@@ -15,6 +15,7 @@
 // console.log(arrLength([1, 2, 3, 4]))
 
 // || Q3.) Get the lasy element in an array || * could not run *
+
 // function arrLength(arr) {
 //     return arr[arr.length - 1];
 // }
@@ -36,6 +37,7 @@
 // console.log(arrSum(['dog', 'cat', 'moose']));
 
 // || Q5.) Add up the numbers from a single number
+
 // Given a number, add up all the numbers from one to the number that is given E.X; An input of 4 will give you 1 + 2 + 3 + 4, which is 10
 
 // function progressiveSum(num) {
@@ -86,3 +88,33 @@
 //   return max;
 // }
 // console.log(getMax([-125, 333, 233]));
+
+//  || Q8.) Reverse a string || incrementing for loop
+
+// function reverseString(str) {
+//     let reversedString = '';
+//     for (let i = 0; i < str.length; ++i) {
+//         reversedString = str[i] + reversedString;
+//     }
+//  return reversedString;
+// }
+// console.log(reverseString('abc'))
+
+// || Q8.) Reverse a string || decrementing for loop
+
+// function reverseString(str) {
+//         let reversedString = '';
+//         for (let i = str.length - 1; i >= 0; --i) {
+//             reversedString = reversedString + str[i]
+//         }
+//      return reversedString;
+//     }
+//     console.log(reverseString('abc'))
+
+// || Q8.) Reverse a string || Using array reverse property 
+
+// function reverseString(str) {
+// return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString('abcdef'));
