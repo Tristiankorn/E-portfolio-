@@ -118,3 +118,78 @@
 // }
 
 // console.log(reverseString('abcdef'));
+
+//  || Q9.) Turn every element in an array into 0 || soloution #1 For-loop ||
+
+// function convertToZeros(arr) {
+
+// let newArr = [];
+// for (let i = 0; i < arr.length; ++i) {
+// newArr [i] = 0;
+// }
+// return newArr
+
+// }
+
+// console.log(convertToZeros([1, 2, 2, 3, 4, 6]));
+
+// Q9B.) Array.fill method #2
+
+// function convertToZeros(arr) {
+// return new Array(arr.length).fill(0);
+
+// }
+// console.log(convertToZeros([1, 2, 3, 4,6,]))
+
+// function convertToZeros(arr) {
+//     return arr.map(elem => 'penisEnvy');
+// }
+
+// console.log(convertToZeros([1, -3, 0]));
+
+// || Q10A Filter out all the apples || soloution #1 ( For - loop)
+
+// function filterOutApples(arr) {
+//     let noApples = []
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] !== 'Apples') {
+//             noApples.push(arr[i]);
+//         }
+//         return noApples;
+//     }
+// }
+
+// console.log(filterOutApples(['Banannas', 'Apples', 'Oranges', 'Apples']));
+
+// || Q10B Using - arr.filter method 
+
+// function filterOutApples(arr) {
+//     return arr.filter(elem => elem === 'mitri')
+
+// }
+// console.log(filterOutApples(['hello', 'mitri', 'jimminy']));
+
+// || Q11A Filter out all the truthy values - Using For - Loop ||
+
+// function filterOutFalsey(arr) {
+//     let arr = []
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] !== truthy) {
+//         }
+//         return falsey;
+
+
+//     }
+// }
+// console.log(filterOutFalsey(["", null, [], "0", 0, undefined]))
+
+// || Q11B Filter out falsey - Using arr.filter method ||
+
+function filterOutFalsey(arr) {
+    return arr.filter(elem => !!elem === true)
+
+}
+
+console.log(filterOutFalsey(["", 0, null, undefined, "0", 'hello']));
+
+
