@@ -45,14 +45,58 @@
 // console.log(getMax([234, 411, 137]))
 
 
-
-// Q5. Add up the numbers from a single number || i = 1 && i <= elem; ||
+// Q5.) Add up the numbers from a single given number 
 // function progressiveSum(elem) {
-// let sum = 0;
-// for (let i = 1; i <= elem; ++i) {
-//     sum = sum + i
-// }
+//     let sum = 0;
+//     for (let i = 1; i <= elem; ++i) {
+//         sum = sum + i;
+//     }
 // return sum;
+    
 // }
+
 // console.log(progressiveSum(4))
 
+
+// Q6. Calculate the time 
+// function calcTime(seconds) {
+//     let timerMinutes = Math.floor(seconds / 60);
+//     let timerSeconds = seconds % 60
+
+//     if (timerMinutes.toString().length === 1) {
+//         timerMinutes = '0' + timerMinutes
+
+//     }
+//     return timerMinutes + ':' + timerSeconds
+
+// }
+// console.log(calcTime(50))
+
+
+// function calcTime(seconds) {
+// let timerMinutes = Math.floor(seconds % 60);
+// let timerSeconds = seconds % 60 
+
+// if (timerMinutes.toString().length === 1) {
+//     timerMinutes = '0' + timerMinutes
+
+// }
+
+// return timerMinutes + ':' + timerSeconds
+
+// }
+
+// console.log(calcTime(500));
+
+
+
+function calcTime(seconds) {
+    let timerMinutes = Math.floor(seconds / 60)
+    let timerSeconds = seconds % 60
+
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
+    }
+    return timerMinutes + ':' + timerSeconds;
+}
+console.log(calcTime(5000))
