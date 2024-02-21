@@ -73,30 +73,87 @@
 // console.log(calcTime(50))
 
 
-// function calcTime(seconds) {
-// let timerMinutes = Math.floor(seconds % 60);
-// let timerSeconds = seconds % 60 
+// Q7. FInd the largest number 
 
-// if (timerMinutes.toString().length === 1) {
-//     timerMinutes = '0' + timerMinutes
-
+// function getMax(arr) {
+// let max = arr[0];
+// for (let i = 1; i < arr.length; ++i) {
+//    if (arr[i] > max) {
+//     max = arr[i]
+//    }
+// }
+// return max;
 // }
 
-// return timerMinutes + ':' + timerSeconds
+// console.log(getMax([-300, 0, 23, 435]));
 
+
+// Q8. Reverse a string  || .reverse ||
+
+// function reverseString(str) {
+// return str.split('').reverse().join('')
 // }
 
-// console.log(calcTime(500));
+// console.log(reverseString('Trsitianhasbigpeepee'))
+
+// Q8. Reverse String || incrementing loop ||
+
+// function reverseString(str) {
+//     let reversedString = '';
+//     for (let i = 0; i < str.length; ++i)
+//     reversedString = str[i] + reversedString;
+// return reversedString;
+// }
+
+// console.log(reverseString('tristianhasbigpeepee'))
+
+
+//  Q9A. Turn every element in an aray into 0 || soloution 1 - For loop ||
+// function convertToZero(arr) {
+//     let newArr = []
+//     for (let i = 0; i < arr.length; ++i) {
+//         newArr[i] = 0;
+//     }
+//     return newArr;
+// }
+// console.log(convertToZero([9, 3, 33, 88]))
 
 
 
-function calcTime(seconds) {
-    let timerMinutes = Math.floor(seconds / 60)
-    let timerSeconds = seconds % 60
+//  Q9B. Turn every element in an aray into 0 || soloution 2 - arr.fill ||
+// function convertToZeros(arr) {
+//     return new Array(arr.length).fill(0);
+// }
+// console.log(convertToZeros([1, 2, 4, 5]))
 
-    if (timerMinutes.toString().length === 1) {
-        timerMinutes = '0' + timerMinutes
-    }
-    return timerMinutes + ':' + timerSeconds;
-}
-console.log(calcTime(5000))
+
+// Q9C. Turn every element in an aray into 0 || soloution 3 - arr.map ||
+// function convertToZeros(arr) {
+//     return arr.map(elem => 'goblin slayers')
+// }
+
+// console.log(convertToZeros([24, 34, 34, 43]))
+
+// function convertToZeros(arr) {
+// let newArr = []
+// for (let i = 0; i < arr.length; ++i) {
+//     newArr[i] = 0
+// }
+// return newArr;
+
+// }
+// console.log(convertToZeros([12, 0, 12, 34,]))
+
+
+// function convertToZeros(arr) {
+// return new Array(arr.length).fill(0)
+// }
+
+// console.log(convertToZeros([12, 0, 12,]))
+
+
+// function convertToZeros(arr) {
+// return arr.map(elem => 'doggy wang')
+// }
+
+// console.log(convertToZeros([12, 0, 12, 34,]))
