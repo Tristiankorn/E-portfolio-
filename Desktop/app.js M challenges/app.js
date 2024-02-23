@@ -157,3 +157,26 @@
 // }
 
 // console.log(convertToZeros([12, 0, 12, 34,]))
+
+
+// Q10A. remove a targeted element in an array
+// function removeApples(arr) {
+//     let appleRemover = []
+// for (let i = 0; i < arr.length; ++i)
+//  if (arr[i] !== 'Apples') {
+//     appleRemover.push(arr[i])
+// }
+// return appleRemover
+// }
+// console.log(removeApples(['Banannas', 'Apples', 'Melons', 'Berries', 'Apples']));
+
+
+
+// 10B. 
+function noApples(arr) {
+return arr.filter(elem => elem !== 'Apples');
+
+}
+
+console.log(noApples(['Banannas', 'Apples', 'Melons', 'Berries', 'Apples']))
+
