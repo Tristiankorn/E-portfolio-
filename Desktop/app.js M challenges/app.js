@@ -168,26 +168,93 @@
 
 //  kade and Tristian prctice (medium diffiuclty)
 
-// Q1. Falsey or truthy?
-// - given two values, return the first one if it is falsey, otherwise return the second value
-// function trueOrFalse(elem1, elem2) {
-//     return elem1 || elem2;
-// }
-// console.log(trueOrFalse(0 , 500))
 
-// function filterFalsey(elem1, elem2) {
 
+// function noApples(arr) {
+// return arr.filter(elem => elem !== 'Apples')
 // }
 
-// console.log(filterFalsey())
+// console.log(noApples(['Watermelons', 'Apples', 'Peaches', 'Plums', 'Apples', 'Drleonard']))
 
-// Q2. Return the length of any given array || arr.length method
-// k - & T
-// function arrayLength(arr){
-//     for (let i = 0; i < arr.length; ++i) {
-//         console.log(arr[i])
+
+// 11A.
+// function filterOutFalsey(arr){
+//     return arr.filter(elem => !!elem === true)
+// }
+
+// console.log(filterOutFalsey([null, 0, "", 'Greetings', undefined, 234]))
+
+// 11A.
+// function filterOutFalsey(arr) {
+// let truthyArr = []
+//   for (let i = 0; i < arr.length; ++i) {
+//     if (!!arr[i] === true) {
+//         truthyArr.push(arr[i])
 //     }
 // }
+// return truthyArr
 
-// console.log(arrayLength(['Hello', 'KAde', 'Tristian', 23]))
+// }
 
+// console.log(filterOutFalsey([null, 0, "", 'Greetings', undefined, 234]))
+
+
+// 12A Truthy to true, Falsey to false || arr.map method
+
+// function convertToBoolean(arr) {
+// return arr.map(elem => !!elem)
+// }
+
+// console.log(convertToBoolean([500, 'hello', [], 0, null, NaN, ""]))
+
+
+// Q1.) falsey or truthy - given two values, return thr first one if it is falsey, otherwise return the second one
+
+// function filterOutFalsey(elem1, elem2) {
+//    if (elem1 === false) {
+//     return elem1
+//    }
+//    return elem2 
+// }
+
+// console.log(filterOutFalsey(true, 'dog'))
+
+// Pt2.)
+
+// function filterOutFalsey(elem1, elem2) {
+//     return (!elem1) ? elem1  : elem2
+// }
+
+// console.log(filterOutFalsey(true, 'dog'))
+
+
+
+// Q2.) return the length of any given array
+// function arrLength(arr) {
+// return arr.length;
+
+
+// }
+
+// console.log(arrLength([1, 3, 4, 5, 6, ]))
+
+// Q3A.) return thre last element of an array
+// function lastElement(arr) {
+// return arr[arr.length - 1]
+// }
+
+// console.log(lastElement([23, 24, 'hello']))
+
+
+// Q4.) Find the sum of an array
+// function arrSum(arr) {
+// let sum = 0;
+// for (let i = 0; i < arr.length; ++i) {
+// sum = sum + arr[i];
+// }
+// return sum;
+// }
+// console.log(arrSum([2, 2, 2]))
+
+
+// Q5.) 
