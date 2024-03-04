@@ -257,4 +257,29 @@
 // console.log(arrSum([2, 2, 2]))
 
 
-// Q5.) 
+// Q5.) Add up the numbers from a single number 
+
+// function progressiveSum(number) {
+// let sum = 0
+// for (let i = 0; i <= number; ++i) {
+//  sum = sum + i 
+// }
+// return sum
+// }
+
+// console.log(progressiveSum(200))
+
+
+// Q6) calculate the time in seconds 
+function calcTime(seconds) {
+   let timerMinutes = Math.floor(seconds / 60);
+   let timerSeconds = seconds % 60;
+
+   if (timerMinutes.toString().length === 1) {
+    timerMinutes = '0' + timerMinutes
+   }
+
+   return + timerMinutes + ':' + timerSeconds
+
+}
+console.log(calcTime(3400))
