@@ -301,14 +301,20 @@
 
 // 8B.) 
 
-function stringReverse(str) {
-let reversedString = '';
-for (let i = 0; i < str.length; ++i) {
-    reversedString = str[i] + reversedString;
+// function stringReverse(str) {
+// let reversedString = '';
+// for (let i = 0; i < str.length; ++i) {
+//     reversedString = str[i] + reversedString;
 
-}
-return reversedString;
+// }
+// return reversedString;
     
-}
+// }
 
-console.log(reverseString('elloGovena'))
+// console.log(stringReverse('elloGovena'))
+
+// Turn every element in an array to 0
+function arrZero(arr) {
+    return arr.map(elem => 0)
+}
+console.log(arrZero(['hello', 34, NaN]))
