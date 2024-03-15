@@ -100,3 +100,17 @@
 // }
 // console.log(calcTime(2000))
 
+// Q7.) Return the largest number in an array
+function largestNum(arr) {
+    let max = []
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return max; 
+}
+console.log(largestNum([200, 400, -500]))
+            
+
+
