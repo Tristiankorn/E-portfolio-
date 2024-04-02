@@ -1,1 +1,6 @@
-console.log("hello world")
+function maxSum(arr) {
+        
+    
+}
+
+console.log([1, 2, 3, 4])
